@@ -1,0 +1,169 @@
+
+/*
+ * Stylesheet: Blackthorn Events Custom Theme
+ * Author: Shelley Wood
+ * Created: 17 September 2025
+ * Description: Custom styles for branding and layout adjustments on the external Blackthorn Events Portal.
+ * Version: 1.0
+ * Last Updated: 17 September 2025
+ * Change Log:
+ * - Initial creation with base styles
+ */
+
+ /* ================================
+   Event Group Settings
+   ================================ */
+
+/* Hides the event group name in the event group homepage */
+.group-name h1 { 
+    display: none !important;
+}
+
+/* Sets the colour of the active chip in the event group homepage */
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+    background-color: #00cece !important;
+    color: #03304A !important;
+}
+
+/* Removes the overlay on a button in the focused state */
+.mat-standard-chip:focus::after {
+    opacity: 0 !important;
+}
+
+/* Sets the colour of the selection indicator in the event group homepage */
+.category-item.selected {
+    border-left-color: #00cece !important;
+}
+
+/* Sets the colour of the time / date line in the event group homepage */
+.event-start-date {
+    color: #00cece !important;
+}
+
+/* Sets the colour of the background when a checkbox is selected in the event group homepage */
+.b-contain input:checked ~ .b-input {
+    background: #00cece !important;
+    border-color: #00cece !important;
+}
+
+/* Sets the colour of text notification regarding ticket sales */
+.event-status {
+    color: #751330 !important;
+    border: 0.0625rem solid #751330 !important;
+
+}
+
+/*  Sets button labels to dark blue */
+.get-ticket-button {
+    color: #03304A !important;
+}
+
+/* Sets the font sizing on the event group homepage */
+.group-description .bt-rich-text .content p {
+  font-size: 1rem !important; 
+  color: #03304a !important; 
+}
+
+/* hides the image used in the no upcoming events screen */
+
+.null-image-container {
+    display: none !important;
+}
+
+/* updates the text format in the no upcoming events view */
+
+.null-texts {
+    font-size: 1.625rem !important;
+    color: #03304A !important;
+    font-weight: 600 !important;
+}
+
+
+/* ================================
+   Event Detail Page styles
+   ================================ */
+
+/* Hides the featured Sponsors Section on event detail pages */
+.section.featured-sponsors {
+   display: none !important;
+}
+
+/* hides the event divider on event pages */ 
+.divider.primary {
+    display: none !important;
+}
+
+/* Sets the font size in event pages to 1 rem */
+.content p, .content span:not(:has(h1, h2, h3, h4, h5, h6)) {
+    font-size: 1rem !important;
+    color: #03304A !important;
+}
+
+/* Reduces spacing between page sections to reduce whitespace */ 
+
+.event-details {
+    padding: 3rem 2rem !important; 
+}
+
+.section.tickets {
+    padding: 3rem 2rem !important; 
+}
+
+.section.venue {
+    padding: 3rem 2rem !important;
+}
+
+.sponsors-wrapper {
+    padding: 0rem 2rem !important;
+}
+
+/* ================================
+   Forms
+   ================================ */
+
+   /* adds a background and border to improve form accessibility */ 
+
+.event-questions-form {
+    background-color: #f6f6f6;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #d2d8dd;
+} 
+
+.event-questions-form .mat-raised-button {
+    box-shadow: none !important; /* Removes that shadow */
+    background-color: #ff69b4;    /* Dolly pink sparkle */
+    color: white;                /* Keep it classy */
+    font-weight: bold;           /* Rhinestone boldness */
+}
+
+
+/* ================================
+   Fonts
+   ================================ */
+
+/* Import Nunito Sans from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* Set base font size for rem units */
+html {
+    font-size: 18px; /* 1rem = 18px */
+}
+
+/* Apply Nunito Sans and text color to all elements */
+body, body *:not(.event-price):not(.event-price *):not(.material-icons) {
+    font-family: 'Nunito Sans', sans-serif;
+    color: #03304A;
+}
+
+/* Set letter spacing on event page header */
+.event-details-container .event-name {
+    letter-spacing: 0 !important;
+}
+
+/* Sets hyperlinks to be teal and underlined */
+.content a {
+    color: #00cece !important;
+    text-decoration: underline !important;
+    font-size: 1rem !important;
+}
